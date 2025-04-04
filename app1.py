@@ -4,7 +4,7 @@ import numpy as np
 from PIL import Image
 
 # Configure the Streamlit page
-st.set_page_config(page_title="Image Processing", layout="wide", page_icon="🔬")
+st.set_page_config(page_title="Image Processing", layout="wide")
 st.title(" Image Processing Project")
 
 # Custom CSS for sidebar styling
