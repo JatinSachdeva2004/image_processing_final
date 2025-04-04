@@ -30,7 +30,8 @@ if uploaded_file:
 
     with col1:
         st.markdown("###  Original Image")
-        st.image(image, use_column_width=True)
+        st.image(image, use_container_width=True)
+
 
     # Sidebar - Processing options
     with st.sidebar:
@@ -103,7 +104,8 @@ if uploaded_file:
 
         # Display the processed image
         st.markdown("###  Processed Image")
-        st.image(processed, use_column_width=True, channels="RGB" if len(processed.shape) == 3 else "GRAY")
+        st.image(processed, use_container_width=True, channels="RGB" if len(processed.shape) == 3 else "GRAY")
+
 
         # Convert processed image to downloadable format
         processed_pil = Image.fromarray(processed)
